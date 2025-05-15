@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "api/cron.ts": {
+      "runtime": "edge"
+    },
+    "api/auth.ts": {
+      "runtime": "edge"
+    }
+  },
+  "routes": [
+    { "src": "/api/.*", "dest": "/api/$1.ts" }
+  ],
+  "cron": [
+    {
+      "path": "/api/cron",
+      "schedule": "*/10 * * * *"
+    }
+  ]
+}
