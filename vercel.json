@@ -1,10 +1,10 @@
 {
   "functions": {
     "api/cron.ts": {
-      "runtime": "edge"
+      "runtime": "nodejs18.x"
     },
     "api/auth.ts": {
-      "runtime": "edge"
+      "runtime": "nodejs18.x"
     }
   },
   "routes": [
